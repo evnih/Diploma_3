@@ -1,0 +1,102 @@
+{
+  "uid" : "3581e37de5fffbe7",
+  "name" : "Получение данных пользователя с авторизацией",
+  "fullName" : "UserProfileTest.testGetUserProfileWithAuth",
+  "historyId" : "7625b1eb89be4a8739b25aad7bd91c3d",
+  "time" : {
+    "start" : 1752995403379,
+    "stop" : 1752995404704,
+    "duration" : 1325
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Регистрация пользователя",
+      "time" : {
+        "start" : 1752995403379,
+        "stop" : 1752995403738,
+        "duration" : 359
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User(email=testuser1752995403379@example.com, password=password123, name=Test User, accessToken=null)"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "API: Удаление пользователя",
+      "time" : {
+        "start" : 1752995404026,
+        "stop" : 1752995404704,
+        "duration" : 678
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2M5NjRkOWVkMjgwMDAxYjY1ZTE2NyIsImlhdCI6MTc1Mjk5NTQwNSwiZXhwIjoxNzUyOTk2NjA1fQ.saIW3yODncvLwGg8Unx1SMEWc0OIxMFacJXy8-pfwnM"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "UserProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testGetUserProfileWithAuth"
+  }, {
+    "name" : "suite",
+    "value" : "UserProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "Lena"
+  }, {
+    "name" : "thread",
+    "value" : "17464@Lena.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3581e37de5fffbe7.json",
+  "parameterValues" : [ ]
+}

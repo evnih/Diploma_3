@@ -1,0 +1,131 @@
+[ {
+  "uid" : "7a00a67bca294323",
+  "name" : "Вход с неверными учетными данными",
+  "time" : {
+    "start" : 1752995350269,
+    "stop" : 1752995374141,
+    "duration" : 23872
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f3ee23aa842101f",
+  "name" : "Проверка перехода в раздел 'Булки'",
+  "time" : {
+    "start" : 1752995289806,
+    "stop" : 1752995305580,
+    "duration" : 15774
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9461ea716d1474ba",
+  "name" : "Регистрация нового пользователя",
+  "time" : {
+    "start" : 1752995397847,
+    "stop" : 1752995400176,
+    "duration" : 2329
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f1f766df5ec52759",
+  "name" : "Вход через кнопку в форме регистрации",
+  "time" : {
+    "start" : 1752995374147,
+    "stop" : 1752995396520,
+    "duration" : 22373
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "53e0ba5f30395ee4",
+  "name" : "Регистрация с некорректным паролем",
+  "time" : {
+    "start" : 1752995396525,
+    "stop" : 1752995397843,
+    "duration" : 1318
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa8b9f2c6567affa",
+  "name" : "Обновление данных пользователя с авторизацией",
+  "time" : {
+    "start" : 1752995401945,
+    "stop" : 1752995403375,
+    "duration" : 1430
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fccaa5de1c27ef34",
+  "name" : "Обновление данных пользователя без авторизации",
+  "time" : {
+    "start" : 1752995400180,
+    "stop" : 1752995401941,
+    "duration" : 1761
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad78daa7ec5a9461",
+  "name" : "Вход через кнопку 'Личный кабинет'",
+  "time" : {
+    "start" : 1752995334875,
+    "stop" : 1752995342979,
+    "duration" : 8104
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f703e75ed653f11",
+  "name" : "Успешный вход по кнопке 'Войти в аккаунт'",
+  "time" : {
+    "start" : 1752995320645,
+    "stop" : 1752995334866,
+    "duration" : 14221
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3822682852c781c8",
+  "name" : "Проверка перехода в раздел 'Соусы'",
+  "time" : {
+    "start" : 1752995305768,
+    "stop" : 1752995313958,
+    "duration" : 8190
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0381e42dfb05f6d",
+  "name" : "testFillingsSectionSelection",
+  "time" : {
+    "start" : 1752995313967,
+    "stop" : 1752995320610,
+    "duration" : 6643
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3581e37de5fffbe7",
+  "name" : "Получение данных пользователя с авторизацией",
+  "time" : {
+    "start" : 1752995403379,
+    "stop" : 1752995404704,
+    "duration" : 1325
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e276d411f88c446",
+  "name" : "Вход через кнопку в форме восстановления пароля",
+  "time" : {
+    "start" : 1752995342985,
+    "stop" : 1752995350265,
+    "duration" : 7280
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,48 @@
+{
+  "total" : 4,
+  "items" : [ {
+    "uid" : "b9a196f305ae86bf6bf452c18364a114",
+    "name" : "LoginTest",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "87facc0e36f1dc0211c37dc7e1a87f44",
+    "name" : "Тесты регистрации пользователя",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "4dd8949d840c1ce993103bef441a4abd",
+    "name" : "Тесты разделов конструктора",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "653b2598fcc3a9358abe55c6f13054c7",
+    "name" : "UserProfileTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  } ]
+}

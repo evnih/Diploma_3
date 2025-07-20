@@ -1,0 +1,243 @@
+{
+  "uid" : "1e276d411f88c446",
+  "name" : "Вход через кнопку в форме восстановления пароля",
+  "fullName" : "LoginTest.testLoginViaPasswordResetForm",
+  "historyId" : "bef8b633022b6c974935e4eac317aa49",
+  "time" : {
+    "start" : 1752995342985,
+    "stop" : 1752995350265,
+    "duration" : 7280
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Инициализация тестового окружения",
+      "time" : {
+        "start" : 1752995342986,
+        "stop" : 1752995343740,
+        "duration" : 754
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Регистрация пользователя",
+      "time" : {
+        "start" : 1752995343740,
+        "stop" : 1752995344100,
+        "duration" : 360
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User(email=testuser1752995343740@example.com, password=QtijATX3, name=User1752995343740, accessToken=null)"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Кликнуть по элементу: By.xpath: //a[contains(@href,'/login')]",
+      "time" : {
+        "start" : 1752995347942,
+        "stop" : 1752995347979,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "By.xpath: //a[contains(@href,'/login')]"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Проверить отображение формы логина",
+      "time" : {
+        "start" : 1752995347980,
+        "stop" : 1752995348062,
+        "duration" : 82
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Ввести email: testuser1752995343740@example.com",
+      "time" : {
+        "start" : 1752995348062,
+        "stop" : 1752995348262,
+        "duration" : 200
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "testuser1752995343740@example.com"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Ввести пароль",
+      "time" : {
+        "start" : 1752995348263,
+        "stop" : 1752995348388,
+        "duration" : 125
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "QtijATX3"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Нажать кнопку входа",
+      "time" : {
+        "start" : 1752995348388,
+        "stop" : 1752995348563,
+        "duration" : 175
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "API: Удаление пользователя",
+      "time" : {
+        "start" : 1752995348867,
+        "stop" : 1752995349567,
+        "duration" : 700
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2M5NjExOWVkMjgwMDAxYjY1ZTE1MSIsImlhdCI6MTc1Mjk5NTM0NSwiZXhwIjoxNzUyOTk2NTQ1fQ.VlPFt3TMDhmGfcuT8C3j1rhhqL-0vQHMzqD8crpVqQE"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Очистка тестового окружения",
+      "time" : {
+        "start" : 1752995349567,
+        "stop" : 1752995350265,
+        "duration" : 698
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "API: Удаление пользователя",
+        "time" : {
+          "start" : 1752995349567,
+          "stop" : 1752995349965,
+          "duration" : 398
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "accessToken",
+          "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2M5NjExOWVkMjgwMDAxYjY1ZTE1MSIsImlhdCI6MTc1Mjk5NTM0NSwiZXhwIjoxNzUyOTk2NTQ1fQ.VlPFt3TMDhmGfcuT8C3j1rhhqL-0vQHMzqD8crpVqQE"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 10,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLoginViaPasswordResetForm"
+  }, {
+    "name" : "suite",
+    "value" : "LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "Lena"
+  }, {
+    "name" : "thread",
+    "value" : "17464@Lena.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Вход через форму восстановления пароля"
+  }, {
+    "name" : "epic",
+    "value" : "Авторизация"
+  }, {
+    "name" : "feature",
+    "value" : "Функциональность входа в систему"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1e276d411f88c446.json",
+  "parameterValues" : [ ]
+}

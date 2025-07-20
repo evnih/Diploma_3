@@ -3,7 +3,7 @@
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !target/site/allure-maven-plugin/
-
+allure-results/
 ### IntelliJ IDEA ###
 .idea/modules.xml
 .idea/jarRepositories.xml

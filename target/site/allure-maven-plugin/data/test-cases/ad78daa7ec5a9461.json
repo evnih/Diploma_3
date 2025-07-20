@@ -1,0 +1,258 @@
+{
+  "uid" : "ad78daa7ec5a9461",
+  "name" : "Вход через кнопку 'Личный кабинет'",
+  "fullName" : "LoginTest.testLoginViaPersonalAccountButton",
+  "historyId" : "810c11492afa8d6dde1a4cec130f15b1",
+  "time" : {
+    "start" : 1752995334875,
+    "stop" : 1752995342979,
+    "duration" : 8104
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Инициализация тестового окружения",
+      "time" : {
+        "start" : 1752995334875,
+        "stop" : 1752995335812,
+        "duration" : 937
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Регистрация пользователя",
+      "time" : {
+        "start" : 1752995335812,
+        "stop" : 1752995336186,
+        "duration" : 374
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User(email=testuser1752995335812@example.com, password=sdy5dcjb, name=User1752995335812, accessToken=null)"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Нажать кнопку 'Личный кабинет'",
+      "time" : {
+        "start" : 1752995341195,
+        "stop" : 1752995341242,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Кликнуть по элементу: By.xpath: //a[contains(@href,'/account')]",
+        "time" : {
+          "start" : 1752995341195,
+          "stop" : 1752995341242,
+          "duration" : 47
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "By.xpath: //a[contains(@href,'/account')]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Проверить отображение формы логина",
+      "time" : {
+        "start" : 1752995341242,
+        "stop" : 1752995341299,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Ввести email: testuser1752995335812@example.com",
+      "time" : {
+        "start" : 1752995341299,
+        "stop" : 1752995341509,
+        "duration" : 210
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "testuser1752995335812@example.com"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Ввести пароль",
+      "time" : {
+        "start" : 1752995341510,
+        "stop" : 1752995341674,
+        "duration" : 164
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "sdy5dcjb"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Нажать кнопку входа",
+      "time" : {
+        "start" : 1752995341674,
+        "stop" : 1752995341847,
+        "duration" : 173
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "API: Удаление пользователя",
+      "time" : {
+        "start" : 1752995341926,
+        "stop" : 1752995342600,
+        "duration" : 674
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2M5NjA5OWVkMjgwMDAxYjY1ZTE0ZCIsImlhdCI6MTc1Mjk5NTMzNywiZXhwIjoxNzUyOTk2NTM3fQ.ObscQUzo2Nz1ChaPVGg8flB3vhCuRgDx6YSETcDvxeM"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Очистка тестового окружения",
+      "time" : {
+        "start" : 1752995342601,
+        "stop" : 1752995342979,
+        "duration" : 378
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "API: Удаление пользователя",
+        "time" : {
+          "start" : 1752995342601,
+          "stop" : 1752995342835,
+          "duration" : 234
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "accessToken",
+          "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2M5NjA5OWVkMjgwMDAxYjY1ZTE0ZCIsImlhdCI6MTc1Mjk5NTMzNywiZXhwIjoxNzUyOTk2NTM3fQ.ObscQUzo2Nz1ChaPVGg8flB3vhCuRgDx6YSETcDvxeM"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 11,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLoginViaPersonalAccountButton"
+  }, {
+    "name" : "suite",
+    "value" : "LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "Lena"
+  }, {
+    "name" : "thread",
+    "value" : "17464@Lena.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Вход через личный кабинет"
+  }, {
+    "name" : "epic",
+    "value" : "Авторизация"
+  }, {
+    "name" : "feature",
+    "value" : "Функциональность входа в систему"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ad78daa7ec5a9461.json",
+  "parameterValues" : [ ]
+}
