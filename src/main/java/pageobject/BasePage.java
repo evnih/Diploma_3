@@ -1,4 +1,4 @@
-package pageObject;
+package pageobject;
 
 
 import io.qameta.allure.Step;
@@ -12,6 +12,8 @@ import java.time.Duration;
 public class BasePage {
     protected WebDriver driver;
     protected WebDriverWait wait;
+
+
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -35,22 +37,4 @@ public class BasePage {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public void waitForPageLoaded() {
-        wait.until(d -> ((JavascriptExecutor) d)
-                .executeScript("return document.readyState").equals("complete"));
-    }
-    @Step("Ввести текст '{text}' в элемент: {locator}")
-    protected void typeText(By locator, String text) {
-        WebElement element = driver.findElement(locator);
-        element.clear();
-        element.sendKeys(text);
-    }
-    @Step("Проверить видимость элемента {locator}")
-    protected boolean isElementDisplayed(By locator) {
-        try {
-            return driver.findElement(locator).isDisplayed();
-        } catch (NoSuchElementException e) {
-            return false;
-        }
-    }
 }

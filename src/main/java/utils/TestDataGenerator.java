@@ -1,24 +1,27 @@
 package utils;
 
 
-import java.util.concurrent.ThreadLocalRandom;
+import net.datafaker.Faker;
+
+
 
 public class TestDataGenerator {
+    public static final Faker faker = new Faker();
+
     public static String randomEmail() {
-        return "testuser" + System.currentTimeMillis() + "@example.com";
+        return faker.internet().emailAddress();
     }
 
     public static String randomName() {
-        return "User" + System.currentTimeMillis();
+        return faker.name().fullName();
     }
 
-    public static String randomPassword(int length) {
-        String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < length; i++) {
-            int index = ThreadLocalRandom.current().nextInt(chars.length());
-            sb.append(chars.charAt(index));
-        }
-        return sb.toString();
+    public static String randomPassword() {
+        return faker.internet().password(8, 16, true, true);
     }
+    public static String randomPassword(int length) {
+        return faker.internet().password(length, length, true, true);
+    }
+
+
 }

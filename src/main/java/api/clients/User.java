@@ -1,6 +1,6 @@
 package api.clients;
 
-import constant.Locators;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
 

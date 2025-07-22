@@ -1,59 +1,83 @@
-import api.clients.User;
-import api.clients.UserApi;
+
+
+import constant.TestConstants;
 import io.qameta.allure.*;
 import io.qameta.allure.junit4.DisplayName;
-import io.restassured.response.Response;
+
 import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
-import static org.apache.http.HttpStatus.*;
+import pageobject.MainPage;
+import pageobject.RegistrationPage;
+import utils.TestDataGenerator;
+
+
 import static org.junit.Assert.*;
 
 @Epic("Регистрация")
 @Feature("Функциональность регистрации пользователя")
 @DisplayName("Тесты регистрации пользователя")
 public class RegistrationTest extends BaseTest {
-    private User user;
-    private String accessToken;
+    private RegistrationPage registrationPage;
 
+
+    @Before
+    public void setUp() {
+        super.setUp();
+        registrationPage = new RegistrationPage(driver);
+
+    }
     @Test
     @Story("Успешная регистрация")
     @DisplayName("Регистрация нового пользователя")
+    @Description("Проверка успешной регистрации через UI")
     @Severity(SeverityLevel.BLOCKER)
     public void testSuccessfulUserRegistration() {
-        user = new User()
-                .setEmail("testuser" + System.currentTimeMillis() + "@example.com")
-                .setPassword("password123")
-                .setName("Test User");
+        MainPage mainPage = new MainPage(driver);
 
-        Response response = UserApi.createUser(user);
-        assertEquals(SC_OK, response.getStatusCode());
 
-        accessToken = response.jsonPath().getString("accessToken");
-        assertNotNull("Access token не получен", accessToken);
+        String email = TestDataGenerator.randomEmail();
+        String password = TestDataGenerator.randomPassword(8);
+        String name = TestDataGenerator.randomName();
+
+        registrationPage.open(TestConstants.REGISTER_PAGE)
+                .enterName(name)
+                .enterEmail(email)
+                .enterPassword(password)
+                .clickRegisterButton();
+
+        assertTrue("После успешной регистрации должна отображаться главная страница",
+                mainPage.isPageLoaded());
     }
 
     @Test
     @DisplayName("Регистрация с некорректным паролем")
+    @Description("Проверка валидации поля пароля при регистрации")
     @Severity(SeverityLevel.CRITICAL)
     public void testRegistrationWithInvalidPassword() {
-        user = new User()
-                .setEmail("testuser" + System.currentTimeMillis() + "@example.com")
-                .setPassword("12345")
-                .setName("Test User");
+        String email = TestDataGenerator.randomEmail();
+        String shortPassword = "12345"; // Пароль короче 6 символов
 
-        Response response = UserApi.createUser(user);
-        assertEquals(SC_FORBIDDEN, response.getStatusCode());
-        assertEquals("Ожидается ошибка при коротком пароле",
-                "Пароль должен быть не менее 6 символов",
-                response.jsonPath().getString("message"));
+        registrationPage.open(TestConstants.REGISTER_PAGE)
+                .enterName(TestDataGenerator.randomName())
+                .enterEmail(email)
+                .enterPassword(shortPassword)
+                .clickRegisterButton();
+
+
+       assertTrue("Сообщение об ошибке должно быть видимым",
+                registrationPage.isErrorMessageDisplayed());
+
+        assertEquals("Некорректный пароль",
+                registrationPage.getErrorMessage());
     }
 
     @After
     public void tearDown() {
-        if (accessToken != null) {
-            Response deleteResponse = UserApi.deleteUser(accessToken);
-            assertEquals(SC_ACCEPTED, deleteResponse.getStatusCode());
-        }
+
+
+        super.tearDown();
+
     }
 }

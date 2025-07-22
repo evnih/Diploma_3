@@ -12,10 +12,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import pageObject.LoginPage;
-import pageObject.MainPage;
-import pageObject.PasswordResetPage;
-import pageObject.RegistrationPage;
+import pageobject.LoginPage;
+import pageobject.MainPage;
+import pageobject.PasswordResetPage;
+import pageobject.RegistrationPage;
 import utils.TestDataGenerator;
 
 
@@ -51,6 +51,7 @@ public class LoginTest extends BaseTest {
     @Test
     @DisplayName("Успешный вход по кнопке 'Войти в аккаунт'")
     @Story("Пользователь может войти через главную страницу")
+    @Description("Проверка авторизации пользователя через кнопку 'Войти в аккаунт' на главной странице")
     @Severity(SeverityLevel.BLOCKER)
     public void testLoginViaMainPageButton() {
 
@@ -73,6 +74,7 @@ public class LoginTest extends BaseTest {
     @Test
     @Story("Вход через личный кабинет")
     @DisplayName("Вход через кнопку 'Личный кабинет'")
+    @Description("Проверка авторизации пользователя через кнопку 'Личный кабинет' в шапке сайта")
     @Severity(SeverityLevel.BLOCKER)
     public void testLoginViaPersonalAccountButton() {
         driver.get(TestConstants.BASE_URL);
@@ -91,6 +93,7 @@ public class LoginTest extends BaseTest {
     @Test
     @Story("Вход через форму регистрации")
     @DisplayName("Вход через кнопку в форме регистрации")
+    @Description("Проверка перехода к авторизации со страницы регистрации и успешного входа")
     @Severity(SeverityLevel.NORMAL)
     public void testLoginViaRegistrationForm() {
 
@@ -112,6 +115,7 @@ public class LoginTest extends BaseTest {
     @Test
     @Story("Вход через форму восстановления пароля")
     @DisplayName("Вход через кнопку в форме восстановления пароля")
+    @Description("Проверка перехода к авторизации со страницы восстановления пароля и успешного входа")
     @Severity(SeverityLevel.NORMAL)
     public void testLoginViaPasswordResetForm() {
 
@@ -133,6 +137,7 @@ public class LoginTest extends BaseTest {
     @Test
     @Story("Негативные сценарии")
     @DisplayName("Вход с неверными учетными данными")
+    @Description("Проверка отображения ошибки при вводе некорректных учетных данных")
     @Severity(SeverityLevel.CRITICAL)
     public void testLoginWithInvalidCredentials() {
 

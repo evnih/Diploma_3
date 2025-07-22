@@ -2,7 +2,7 @@ import constant.TestConstants;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Before;
 import org.junit.Test;
-import pageObject.ConstructionPage;
+import pageobject.ConstructionPage;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -25,6 +25,7 @@ public class ConstructionTest extends BaseTest {
     @Test
     @Story("Выбор раздела булок")
     @DisplayName("Проверка перехода в раздел 'Булки'")
+    @Description("Проверка что раздел 'Булки' становится активным при клике")
     @Severity(SeverityLevel.CRITICAL)
     public void testBunsSectionSelection() {
         constructionPage.selectSection(TestConstants.BUNS_SECTION);
@@ -34,6 +35,7 @@ public class ConstructionTest extends BaseTest {
     @Test
     @Story("Выбор раздела соусов")
     @DisplayName("Проверка перехода в раздел 'Соусы'")
+    @Description("Проверка что раздел 'Соусы' становится активным при клике")
     @Severity(SeverityLevel.CRITICAL)
     public void testSaucesSectionSelection() {
         constructionPage.selectSection(TestConstants.SAUCES_SECTION);
@@ -41,6 +43,10 @@ public class ConstructionTest extends BaseTest {
     }
 
     @Test
+    @Story("Выбор раздела соусов")
+    @DisplayName("Проверка перехода в раздел 'Начинки'")
+    @Description("Проверка что раздел 'Начинки' становится активным при клике")
+    @Severity(SeverityLevel.CRITICAL)
     public void testFillingsSectionSelection() {
         constructionPage.selectSection(TestConstants.FILLINGS_SECTION);
         assertEquals(TestConstants.FILLINGS_SECTION, constructionPage.getActiveSectionName());
