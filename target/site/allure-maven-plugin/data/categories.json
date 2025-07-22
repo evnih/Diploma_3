@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Должно отображаться сообщение об ошибке",
+      "children" : [ {
+        "name" : "Вход с неверными учетными данными",
+        "uid" : "7a00a67bca294323",
+        "parentUid" : "ddfcfc0417b8259c50796ccdae2a17ce",
+        "status" : "failed",
+        "time" : {
+          "start" : 1752995350269,
+          "stop" : 1752995374141,
+          "duration" : 23872
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ddfcfc0417b8259c50796ccdae2a17ce"
+    }, {
+      "name" : "expected:<403> but was:<200>",
+      "children" : [ {
+        "name" : "Регистрация с некорректным паролем",
+        "uid" : "53e0ba5f30395ee4",
+        "parentUid" : "67eca2faa488df3cbb600151eb6cd587",
+        "status" : "failed",
+        "time" : {
+          "start" : 1752995396525,
+          "stop" : 1752995397843,
+          "duration" : 1318
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "67eca2faa488df3cbb600151eb6cd587"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

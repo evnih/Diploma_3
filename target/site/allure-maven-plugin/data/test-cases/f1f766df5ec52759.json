@@ -1,0 +1,225 @@
+{
+  "uid" : "f1f766df5ec52759",
+  "name" : "Вход через кнопку в форме регистрации",
+  "fullName" : "LoginTest.testLoginViaRegistrationForm",
+  "historyId" : "200cdbd80302692cb3a045808b34926e",
+  "time" : {
+    "start" : 1752995374147,
+    "stop" : 1752995396520,
+    "duration" : 22373
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Инициализация тестового окружения",
+      "time" : {
+        "start" : 1752995374147,
+        "stop" : 1752995374893,
+        "duration" : 746
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Регистрация пользователя",
+      "time" : {
+        "start" : 1752995374894,
+        "stop" : 1752995375275,
+        "duration" : 381
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User(email=testuser1752995374893@example.com, password=6ZSOk0Fv, name=User1752995374893, accessToken=null)"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Проверить отображение формы логина",
+      "time" : {
+        "start" : 1752995393579,
+        "stop" : 1752995393650,
+        "duration" : 71
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Ввести email: testuser1752995374893@example.com",
+      "time" : {
+        "start" : 1752995393650,
+        "stop" : 1752995393945,
+        "duration" : 295
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "testuser1752995374893@example.com"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Ввести пароль",
+      "time" : {
+        "start" : 1752995393946,
+        "stop" : 1752995394162,
+        "duration" : 216
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "6ZSOk0Fv"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Нажать кнопку входа",
+      "time" : {
+        "start" : 1752995394162,
+        "stop" : 1752995394380,
+        "duration" : 218
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "API: Удаление пользователя",
+      "time" : {
+        "start" : 1752995394647,
+        "stop" : 1752995395639,
+        "duration" : 992
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2M5NjMwOWVkMjgwMDAxYjY1ZTE1OSIsImlhdCI6MTc1Mjk5NTM3NiwiZXhwIjoxNzUyOTk2NTc2fQ.EbUCF7aLYpY7RbqMcl6smcF8ZQp1-3Luj-5RBuIvvtc"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Очистка тестового окружения",
+      "time" : {
+        "start" : 1752995395639,
+        "stop" : 1752995396520,
+        "duration" : 881
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "API: Удаление пользователя",
+        "time" : {
+          "start" : 1752995395639,
+          "stop" : 1752995396276,
+          "duration" : 637
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "accessToken",
+          "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4N2M5NjMwOWVkMjgwMDAxYjY1ZTE1OSIsImlhdCI6MTc1Mjk5NTM3NiwiZXhwIjoxNzUyOTk2NTc2fQ.EbUCF7aLYpY7RbqMcl6smcF8ZQp1-3Luj-5RBuIvvtc"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 9,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLoginViaRegistrationForm"
+  }, {
+    "name" : "suite",
+    "value" : "LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "Lena"
+  }, {
+    "name" : "thread",
+    "value" : "17464@Lena.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Вход через форму регистрации"
+  }, {
+    "name" : "epic",
+    "value" : "Авторизация"
+  }, {
+    "name" : "feature",
+    "value" : "Функциональность входа в систему"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f1f766df5ec52759.json",
+  "parameterValues" : [ ]
+}

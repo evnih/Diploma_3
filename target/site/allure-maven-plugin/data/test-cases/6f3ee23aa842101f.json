@@ -1,0 +1,141 @@
+{
+  "uid" : "6f3ee23aa842101f",
+  "name" : "Проверка перехода в раздел 'Булки'",
+  "fullName" : "ConstructionTest.testBunsSectionSelection",
+  "historyId" : "1d03cd555959be36cc9fcdd59688d794",
+  "time" : {
+    "start" : 1752995289806,
+    "stop" : 1752995305580,
+    "duration" : 15774
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Инициализация тестового окружения",
+      "time" : {
+        "start" : 1752995289893,
+        "stop" : 1752995294997,
+        "duration" : 5104
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Кликнуть по элементу: By.xpath: //span[text()='Булки']/..",
+      "time" : {
+        "start" : 1752995305167,
+        "stop" : 1752995305238,
+        "duration" : 71
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "By.xpath: //span[text()='Булки']/.."
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Найти элемент: By.xpath: //div[contains(@class, 'tab_tab_type_current')]",
+      "time" : {
+        "start" : 1752995305239,
+        "stop" : 1752995305265,
+        "duration" : 26
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "By.xpath: //div[contains(@class, 'tab_tab_type_current')]"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Очистка тестового окружения",
+      "time" : {
+        "start" : 1752995305297,
+        "stop" : 1752995305559,
+        "duration" : 262
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "ConstructionTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testBunsSectionSelection"
+  }, {
+    "name" : "suite",
+    "value" : "Тесты разделов конструктора"
+  }, {
+    "name" : "host",
+    "value" : "Lena"
+  }, {
+    "name" : "thread",
+    "value" : "17464@Lena.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Выбор раздела булок"
+  }, {
+    "name" : "epic",
+    "value" : "Конструктор бургеров"
+  }, {
+    "name" : "feature",
+    "value" : "Разделы конструктора"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6f3ee23aa842101f.json",
+  "parameterValues" : [ ]
+}
